@@ -1,6 +1,6 @@
 # Currency Converter
 
-A focused Android currency converter with a warm Material interface, live exchange-rate estimates, and full light and dark theme support.
+An Android currency converter that retrieves exchange-rate estimates from APILayer. The app uses XML layouts and supports light and dark themes.
 
 <p align="center">
   <img src="docs/screenshots/welcome-light.png" width="46%" alt="Currency Converter welcome screen" />
@@ -10,8 +10,8 @@ A focused Android currency converter with a warm Material interface, live exchan
 ## Features
 
 - Live currency conversion through the APILayer Exchange Rates Data API
-- Same-currency conversion without an unnecessary network request
-- Clear loading, success, and inline error states
+- Same-currency conversion without a network request
+- Loading, success, and inline error states
 - Light and dark themes
 - Connectivity awareness
 - Animated splash and navigation transitions
@@ -60,8 +60,7 @@ A focused Android currency converter with a warm Material interface, live exchan
    ./gradlew assembleDebug
    ```
 
-> [!NOTE]
-> `local.properties` prevents credentials from being committed, but an API key embedded in a client app can still be extracted. A production app should make authenticated requests through a backend service.
+The ignored `local.properties` file keeps credentials out of Git. An API key embedded in a client app can still be extracted. Use a backend service if the key must remain confidential.
 
 ## Verification
 
@@ -71,6 +70,10 @@ Run the unit tests and Android lint checks:
 ./gradlew test lintDebug
 ```
 
+## Demo
+
+https://github.com/user-attachments/assets/707d446d-3b00-47c2-aa78-1618bf320a03
+
 ## Contact
 
-Questions or comments: **stefanbusiness95@gmail.com**
+Questions or comments: stefanbusiness95@gmail.com
